@@ -1,62 +1,200 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(220, 220, 220);
 }
 
 .navigation-grocery{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 30px 20px 30px;
 }
 
 .navigation-items{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid black;
+    border-right: 0px;
 }
 
 .navigation-items li{
-    display: inline;
-    margin-right: 16px;
+    float: left;
 }
 
-header{
+.navigation-items a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-right: 2px solid black;
+}
+
+.navigation-items a:hover{
+    background-color:beige;
+}
+
+/* home */
+
+.title-home{
+    text-align: center;
+    width: 800px;
+    margin: 0px auto;
+}
+
+.title-home h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.title-home p{
+    font-size: 20px;
+    color: rgb(129, 129, 129);
+}
+
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.home-left{
+    margin-right: 30px;
+}
+
+.home-right{
+    border-radius: 5px;
+    background-color: rgb(222, 222, 222);
+    padding: 40px;
+}
+
+.home-right p{
+    color: #6e6e6e;
+    margin-bottom: 60px;
+}
+
+.home-right label{
+    font-weight: 600;
+}
+
+.home-right input[type=text], input[type=email], select, input[type=submit]{
+    font-size: 20px;
+    width: 100%;
+    padding: 15px 16px;
+    margin: 10px 0;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 2px solid #aeaeae;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+
+.home-right input[type=submit]{
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    cursor: pointer;
     text-align: center;
 }
 
-header img{
-    max-width: 100%;
-    height: 300px;
+
+/* our package */
+
+.our-package-title{
+    background-color: rgb(222, 222, 222);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.our-package{
+.package-profile{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
-.our-package div{
-    text-align: center;
+.profile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
 }
 
-.circle{
-    width: 100px;
-    height: 100px;
-    border: 2px solid green;
+.profile h3{
+    font-size: 24px;
+}
+
+.profile p{
+    color: #6e6e6e;
+}
+
+.profile img{
     border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #eaeaea;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
-.inquiry-customer{
+.line-our-package-profile{
+    border-bottom: 5px solid #eaeaea;
+    width: 10%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+
+/* call us */
+
+.call-us{
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.call-us h1, p{
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.call-us input[type=submit]{
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+
+/* footer */
+
+.terms-privacy{
+    color: #aeaeae;
+    font-size: 14px;
     display: flex;
     justify-content: space-around;
+    padding-right: 480px;
+    padding-left: 480px;
 }
 
-.inquiry-form{
+.year-copyright{
+    color: #aeaeae;
+    font-size: 14px;
     display: flex;
-    flex-direction: column;
-}
-
-.output{
-    display: none;
-    border: 1px solid black;
+    justify-content: space-around;
+    padding-right: 530px;
+    padding-left: 530px;
 }
